@@ -44,7 +44,7 @@ const translations = {
     "about": "About me",
     "projects": "🎮 Projects",
     "prototypes": "🧪 Prototypes",
-    "experience": "Experience",
+    "experience": "Experience and Education",
     "about-text": "I'm a passionate game developer...",
     "title-experience1": "FREELANCER",
     "title-experience2": "GAME AND VR SPECIALIZATION - IES RAFAEL ALBERTI",
