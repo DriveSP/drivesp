@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title">Jairo Ocaña | Desarrollador y Diseñador de Videojuegos - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="background-carousel">
+        <img src="background/bg1.png" class="bg-slide active" alt="Fondo 1" />
+        <img src="background/bg2.png" class="bg-slide" alt="Fondo 2" />
+        <img src="background/bg3.png" class="bg-slide" alt="Fondo 3" />
+    </div>
+    <div class="glass-container">
+      <header class="fade-in">
+        <div class="top-bar">
+          <div class="lang-switch">
+            <button onclick="setLang('es')">🇪🇸</button>
+            <button onclick="setLang('en')">🇺🇸</button>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <h1 data-i18n="name">Jairo Ocaña</h1>
+          <p data-i18n="role">Desarrollador y Diseñador de Videojuegos</p>
+
+          <div class="social-icons">
+            <a href="https://drive-eikon.itch.io/" target="_blank" aria-label="Itch.io">
+              <img src="icons/itchio.svg" alt="Itch.io" />
+            </a>
+            <a href="https://bsky.app/profile/driveeikon.bsky.social" target="_blank" aria-label="Bluesky">
+              <img src="icons/bluesky.svg" alt="Bluesky" />
+            </a>
+            <a href="https://x.com/DriveEikon" target="_blank" aria-label="X">
+              <img src="icons/x.svg" alt="X" />
+            </a>
+            <a href="https://www.linkedin.com/in/jocarom/" target="_blank" aria-label="LinkedIn">
+              <img src="icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-container">
+          <nav>
+            <a href="index.html" data-i18n="about">Sobre mí</a>
+            <a href="proyectos.html" data-i18n="projects">Proyectos</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="fade-in">
+        <h2 data-i18n="about">Sobre mí</h2>
+        <p data-i18n="about-text">Soy un programador apasionado...</p>
+      </section>
+
+      <section class="fade-in" id="experiencia">
+        <h2 data-i18n="experience">Experiencia Laboral y Educación</h2>
+
+        <div class="job">
+          <h3 data-i18n="title-experience1"></h3>
+          <p class="job-time" data-i18n="time-experience1"></p>
+          <p data-i18n="desc-experience1"></p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">Freelance</span>
+          </div>
+        </div>
+
+        <div class="job">
+          <h3 data-i18n="title-experience2"></h3>
+          <p class="job-time" data-i18n="time-experience2"></p>
+          <p data-i18n="desc-experience2"></p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">Godot</span>
+            <span class="tag">Designer</span>
+            <span class="tag">Producer</span>
+          </div>
+        </div>
+
+        <div class="job">
+          <h3 data-i18n="title-experience3"></h3>
+          <p class="job-time" data-i18n="time-experience3"></p>
+          <p data-i18n="desc-experience3"></p>
+          <ul>
+            <li data-i18n="list-experience1"></li>
+            <li data-i18n="list-experience2"></li>
+            <li data-i18n="list-experience3"></li>
+            <li data-i18n="list-experience4"></li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Blazor</span>
+            <span class="tag">C#</span>
+            <span class="tag">MVC</span>
+            <span class="tag">Entity Framework</span>
+          </div>
+        </div>
+
+        <div class="job">
+          <h3 data-i18n="title-experience4"></h3>
+          <p class="job-time" data-i18n="time-experience4"></p>
+          <p data-i18n="desc-experience4"></p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Client-Server</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="fade-in">
+        © 2025 Jairo Ocaña | <span data-i18n="footer">Portfolio</span>
+      </footer>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title">Jairo Ocaña | Desarrollador y Diseñador de Videojuegos - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-carousel">
+        <img src="background/bg1.png" class="bg-slide active" alt="Fondo 1" />
+        <img src="background/bg2.png" class="bg-slide" alt="Fondo 2" />
+        <img src="background/bg3.png" class="bg-slide" alt="Fondo 3" />
+    </div>
+    <div class="glass-container">
+      <header class="fade-in">
+        <div class="top-bar">
+          <div class="lang-switch">
+            <button onclick="setLang('es')">🇪🇸</button>
+            <button onclick="setLang('en')">🇺🇸</button>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <h1 data-i18n="name">Jairo Ocaña</h1>
+          <p data-i18n="role">Desarrollador y Diseñador de Videojuegos</p>
+
+          <div class="social-icons">
+            <a href="https://drive-eikon.itch.io/" target="_blank" aria-label="Itch.io">
+              <img src="icons/itchio.svg" alt="Itch.io" />
+            </a>
+            <a href="https://bsky.app/profile/driveeikon.bsky.social" target="_blank" aria-label="Bluesky">
+              <img src="icons/bluesky.svg" alt="Bluesky" />
+            </a>
+            <a href="https://x.com/DriveEikon" target="_blank" aria-label="X">
+              <img src="icons/x.svg" alt="X" />
+            </a>
+            <a href="https://www.linkedin.com/in/jocarom/" target="_blank" aria-label="LinkedIn">
+              <img src="icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+
+        <div class="nav-container">
+          <nav>
+            <a href="index.html" data-i18n="about">Sobre mí</a>
+            <a href="proyectos.html" data-i18n="projects">Proyectos</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="fade-in" id="proyectos">
+        <h2 data-i18n="projects">Proyectos</h2>
+
+        <div class="project">
+          <a href="https://roguelab.itch.io/fragmented-memory" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/fragmentedmemory.png" alt="Psychological Horror - Fragmented Memory" />
+          </a>
+          <h4 data-i18n="proj1-title"></h4>
+          <p data-i18n="proj1-desc"></p>
+          <div class="tags">
+            <span class="tag">Godot</span><span class="tag">GDScript</span>
+            <span class="tag">Producer</span><span class="tag">Programming</span>
+            <span class="tag">Psychological Horror</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="https://drive-eikon.itch.io/oh-my-godz" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/ohmygodz.png" alt="Clicker - Oh My Godz" />
+          </a>  
+          <h4 data-i18n="proj2-title"></h4>
+          <p data-i18n="proj2-desc"></p>
+          <div class="tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+            <span class="tag">Programming</span><span class="tag">Clicker</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="https://francescovr.itch.io/globrush" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/globrush.png" alt="Simulation - Globrush" />
+          </a>
+          <h4 data-i18n="proj3-title">Globrush</h4>
+          <p data-i18n="proj3-desc"></p>
+          <div class="tags">
+            <span class="tag">Godot</span><span class="tag">GDScript</span>
+            <span class="tag">Pixel Artist</span><span class="tag">Simulation</span>
+          </div>
+        </div>
+
+        <h3>🧪 Prototipos</h3>
+
+        <div class="prototype">
+          <a href="https://drive-eikon.itch.io/alizias-project" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/alizia.png" alt="Zelda Like - Alizia" />
+          </a>  
+          <h4 data-i18n="prot1-title">Alizia's Project</h4>
+          <p data-i18n="prot1-desc"></p>
+          <div class="tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+            <span class="tag">Programming</span><span class="tag">Zelda-Like</span>
+          </div>
+        </div>
+
+        <div class="prototype">
+          <a href="https://roguelab.itch.io/super-intergalactic-death-tournament" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/superintergalacticdeathtournament.png" alt="Rhythm - Super Intergalactic Death Tournament" />
+          </a>  
+          <h4 data-i18n="prot2-title">Super Intergalactic Death Tournament</h4>
+          <p data-i18n="prot2-desc">.</p>
+          <div class="tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+            <span class="tag">Programming</span><span class="tag">Rhythm</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="fade-in">
+        © 2025 Jairo Ocaña | <span data-i18n="footer">Portfolio</span>
+      </footer>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+</html>

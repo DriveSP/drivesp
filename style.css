@@ -1,0 +1,224 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+  color: #f1f5f9;
+}
+
+header, footer {
+  background: linear-gradient(135deg, #3b0764, #701a75, #312e81);
+  padding: 1rem 1rem 0.5rem;
+  color: #fdf4ff;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #a21caf;
+  box-shadow: 0 0 12px rgba(112, 26, 117, 0.5), inset 0 0 6px rgba(49, 46, 129, 0.6);
+}
+
+.top-bar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.lang-switch button {
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px #ec4899;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background-color: #f472b6;
+  box-shadow: 0 0 12px #ec4899;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  color: #f0abfc;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  color: #a78bfa;
+}
+
+.profile-info {
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 4px #ec4899);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #f472b6);
+}
+
+.nav-container {
+  margin-top: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+nav a {
+  background: linear-gradient(135deg, #4c1d95, #9333ea);
+  color: #f1f5f9;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  box-shadow: 0 0 10px #9333ea;
+}
+
+nav a:hover {
+  background: #7c3aed;
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #c084fc;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.project, .prototype, .job {
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  color: #e0f2fe;
+  box-shadow: 0 0 12px #9333ea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prototype {
+  background: linear-gradient(135deg, #3b82f6, #ec4899);
+}
+
+.project:hover, .prototype:hover, .job:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 16px #ec4899;
+}
+
+.project img,
+.prototype img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto hover */
+.project img:hover,
+.prototype img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 24px rgba(236, 72, 153, 0.6);
+  filter: brightness(1.05) saturate(1.2);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #9333ea;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  color: #fff;
+  box-shadow: 0 0 6px #c084fc;
+}
+
+.job-time {
+  color: #a78bfa;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.background-carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease;
+  filter: blur(10px) brightness(0.5) saturate(1.2);
+}
+
+.bg-slide.active {
+  opacity: 1;
+}
+
+.glass-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  position: relative;
+}
